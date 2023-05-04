@@ -50,4 +50,4 @@ def cmeans(data, c, q, error=1e-3, maxiter=300, seed=None):
             break
     error = np.linalg.norm(t - t2)
 
-    return cntr, t, jm
+    return cntr, t
