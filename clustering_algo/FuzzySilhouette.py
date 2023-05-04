@@ -2,7 +2,7 @@ from sklearn.metrics import pairwise_distances
 import numpy as np
 
 def FuzzySilhouette(X, U, n_clusters, alpha=2):
-    dist_matrix = pairwise_distances_chunked(X)
+    dist_matrix = pairwise_distances(X)
     silhouette = np.zeros(len(X))
     weight = np.zeros(len(X))
     for i in range(len(X)):
